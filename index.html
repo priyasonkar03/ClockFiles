@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clock</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("hero.jpg");
+
+  /* Full height */
+  height: 90%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #63CCFC;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body class="bg">
+
+<h2 style="text-align: center; font-size: 35px; color: #fff; font-weight: 700;">Clock</h2>
+<p style="text-align: center; color: #fff; font-weight: 300; ">
+“Yesterday’s the <b>PAST</b>..., tomorrow’s the <b>FUTURE</b>.., <br>but today is a gift.That’s why it’s called <br>the <b>PRESENT...😊</b>”</p>
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> </a> 
+  <a href="Analog Clock/index.html"><i class="fa-solid fa-clock"></i> Analog Clock</a> 
+  <a href="Digital Clock/index.html"><i class="fa-regular fa-clock"></i> Digital Clock</a> 
+  <a href="StopWatch/index.html"><i class="fa-solid fa-stopwatch"></i> StopWatch</a>
+</div>
+
+</body>
+</html> 
