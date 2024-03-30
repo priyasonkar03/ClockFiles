@@ -51,9 +51,26 @@ body, html {
     display: block;
   }
 }
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .bg {
+    /* Adjust background size for smaller screens */
+    background-size: contain;
+    background-color: #000;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media only screen and (max-width: 479px) {
+  .bg {
+    background-color: #000;
+    /* Adjust background size and other properties for even smaller screens if needed */
+    height: 100%; /* Change height or other properties as needed */
+  }
+}
 </style>
 <body class="bg">
-<div style="text-align: center; color: #fff; ">
+ <div style="text-align: center; color: #fff; ">
     <img src="https://www.auromin.in/cdn/shop/products/Untitled-1_7_6b939f4d-dde7-44a2-a1e9-5f7adc2a36d2_800x.jpg?v=1663669616" 
     style="width: 150px; height: 150px; border-radius: 50%; ">
     <p style="  font-weight: 300; ">

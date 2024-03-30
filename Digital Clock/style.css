@@ -74,24 +74,19 @@ content: '';
 #sec::after{
     content: 'SEC';
 }
-/* Media Query for smaller screens */
-@media only screen and (max-width: 768px) {
+
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
     .container {
-        width: 90%;
-        height: auto;
-        max-width: 600px;
+      width: 90%; /* Adjust width for smaller screens */
     }
+  
     .clock span {
-        font-size: 16px;
+      font-size: 10vw; /* Adjust font size responsively for smaller screens */
     }
-    .container::before{
-        width: 40%;
-        height: 80%;
-        max-width: 300px;
+  
+    .clock span::after {
+      font-size: 3vw; /* Adjust font size responsively for smaller screens */
     }
-    .container::after{
-        width: 50%;
-        height:100%;
-        max-width: 300px;
-    }
-}
+  }
